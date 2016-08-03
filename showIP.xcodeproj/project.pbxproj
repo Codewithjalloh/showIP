@@ -14,6 +14,7 @@
 		5827E7291D528E5700F273B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5827E7271D528E5700F273B5 /* LaunchScreen.storyboard */; };
 		5827E7341D528E5800F273B5 /* showIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5827E7331D528E5800F273B5 /* showIPTests.swift */; };
 		5827E73F1D528E5800F273B5 /* showIPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5827E73E1D528E5800F273B5 /* showIPUITests.swift */; };
+		5827E74E1D528FCD00F273B5 /* objectiv.m in Sources */ = {isa = PBXBuildFile; fileRef = 5827E74D1D528FCD00F273B5 /* objectiv.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		5827E73A1D528E5800F273B5 /* showIPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = showIPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5827E73E1D528E5800F273B5 /* showIPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showIPUITests.swift; sourceTree = "<group>"; };
 		5827E7401D528E5800F273B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5827E74C1D528FCC00F273B5 /* showIP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "showIP-Bridging-Header.h"; sourceTree = "<group>"; };
+		5827E74D1D528FCD00F273B5 /* objectiv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = objectiv.m; sourceTree = "<group>"; };
+		5827E74F1D528FF100F273B5 /* objectiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objectiv.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,9 @@
 				5827E7251D528E5700F273B5 /* Assets.xcassets */,
 				5827E7271D528E5700F273B5 /* LaunchScreen.storyboard */,
 				5827E72A1D528E5700F273B5 /* Info.plist */,
+				5827E74D1D528FCD00F273B5 /* objectiv.m */,
+				5827E74F1D528FF100F273B5 /* objectiv.h */,
+				5827E74C1D528FCC00F273B5 /* showIP-Bridging-Header.h */,
 			);
 			path = showIP;
 			sourceTree = "<group>";
@@ -258,6 +265,7 @@
 			files = (
 				5827E7211D528E5700F273B5 /* ViewController.swift in Sources */,
 				5827E71F1D528E5700F273B5 /* AppDelegate.swift in Sources */,
+				5827E74E1D528FCD00F273B5 /* objectiv.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,10 +407,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = showIP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codewithjallohDev.showIP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "showIP/showIP-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -410,10 +421,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = showIP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codewithjallohDev.showIP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "showIP/showIP-Bridging-Header.h";
 			};
 			name = Release;
 		};

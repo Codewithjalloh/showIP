@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        getIPAddress()
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,7 +22,14 @@ class ViewController: UIViewController {
     
     func getIPAddress() -> [String] {
         
-        <#function body#>
+        var address = [String]()
+        
+        var ifaddr: UnsafeMutablePointer<ifaddrs> = nil
+        if getifaddrs(&ifaddr) == 0 {
+            
+            
+            
+        }
     }
 
 
