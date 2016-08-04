@@ -7,3 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "objectiv.h"
+
+@implementation objectiv
+
+@end

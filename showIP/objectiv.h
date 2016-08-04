@@ -11,3 +11,9 @@
 
 
 #endif /* objectiv_h */
+
+#import <Foundation/Foundation.h>
+
+@interface objectiv : NSObject
+
+@end
